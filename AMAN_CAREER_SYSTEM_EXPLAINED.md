@@ -213,7 +213,7 @@ It reads the MCP database, the War Room spreadsheet, and Gmail, then produces a 
 - Gmail activity
 - A prioritised action list — specific, actionable items only, with exact next steps
 
-The action list is the most important section. It contains only things that genuinely require Aman's decision, ordered by urgency, with specific instructions like "send the VALTRANS draft to info@valtrans.com" rather than vague suggestions like "review your drafts."
+The action list is the most important section. It contains only things that genuinely require Aman's decision, ordered by urgency, with specific instructions like "send the ACME draft to careers@example.com" rather than vague suggestions like "review your drafts."
 
 ---
 
@@ -240,7 +240,7 @@ The Aman Career MCP server is a custom-built Cloudflare Worker that exposes exac
 
 The MCP server is hosted at:
 ```
-https://aman-career-mcp.aman-career-mcp.workers.dev/mcp
+https://YOUR_WORKER.YOUR_SUBDOMAIN.workers.dev/mcp
 ```
 
 It is protected by bearer authentication. Unauthorised requests receive a 401 response. Secrets are stored as Cloudflare Worker secrets — never in source code.

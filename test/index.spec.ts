@@ -16,7 +16,7 @@ const TEST_ENV = {
 	APPS_SCRIPT_SECRET: "test-apps-script-secret",
 	MCP_AUTH_TOKEN: "test-mcp-auth-token",
 	OAUTH_APPROVAL_SECRET: "test-oauth-approval-secret",
-	MCP_RESOURCE_URL: "https://aman-career-mcp.aman-career-mcp.workers.dev/mcp",
+	MCP_RESOURCE_URL: "https://example.com/mcp",
 	OAUTH_CLIENT_ID: "grok-aman-career-mcp",
 };
 

@@ -198,15 +198,23 @@ Fill in:
 | `MCP_AUTH_TOKEN` | Static bearer for tooling / verification |
 | `OAUTH_APPROVAL_SECRET` | Required on the OAuth consent page |
 
-Non-secret vars live in `wrangler.jsonc` (`APPS_SCRIPT_URL`, `MCP_RESOURCE_URL`, `OAUTH_CLIENT_ID`, KV binding).
+Replace placeholders in `wrangler.jsonc` (do not commit real production values to a public repo if you can avoid it):
+
+| Placeholder | Purpose |
+|---|---|
+| `APPS_SCRIPT_URL` | Deployed Apps Script `/exec` URL |
+| `MCP_RESOURCE_URL` | Public MCP endpoint URL |
+| `OAUTH_CLIENT_ID` | Grok OAuth public client id |
+| `YOUR_OAUTH_KV_NAMESPACE_ID` | Cloudflare KV namespace id |
+| `YOUR_OAUTH_KV_PREVIEW_ID` | Cloudflare KV preview id |
 
 ### 3. Configure Apps Script
 
 1. Create the Google Sheet tabs listed above.
 2. Paste `AppScript Code/Code.gs` into a Apps Script project bound to (or opening) that spreadsheet.
-3. Set `CONFIG.SPREADSHEET_ID` to your Sheet ID.
+3. Set `CONFIG.SPREADSHEET_ID` to your Sheet ID (local Apps Script only — keep the repo placeholder).
 4. Store `API_SECRET` in Script Properties (must match `APPS_SCRIPT_SECRET`).
-5. Deploy as a Web App and put the `/exec` URL in `wrangler.jsonc` → `APPS_SCRIPT_URL`.
+5. Deploy as a Web App and put the `/exec` URL in `wrangler.jsonc` → `APPS_SCRIPT_URL` (or a Wrangler env/secret workflow).
 
 ### 4. Run locally
 

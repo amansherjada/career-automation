@@ -22,8 +22,8 @@
 	"kv_namespaces": [
 		{
 			"binding": "OAUTH_KV",
-			"id": "6a6ddd2ae24541e78c87e9d8e1d8a642",
-			"preview_id": "7ec55c9fb2d94fcba72b461b16762914"
+			"id": "YOUR_OAUTH_KV_NAMESPACE_ID",
+			"preview_id": "YOUR_OAUTH_KV_PREVIEW_ID"
 		}
 	],
 

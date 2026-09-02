@@ -56,9 +56,14 @@ async function readJsonRpc(response) {
   return JSON.parse(raw);
 }
 
+const MCP_URL =
+  vars.MCP_RESOURCE_URL ||
+  process.env.MCP_RESOURCE_URL ||
+  "https://YOUR_WORKER.YOUR_SUBDOMAIN.workers.dev/mcp";
+
 async function postMcp(method, body, extraHeaders = {}) {
   const response = await fetch(
-    "https://aman-career-mcp.aman-career-mcp.workers.dev/mcp",
+    MCP_URL,
     {
       method: "POST",
       headers: {

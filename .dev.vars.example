@@ -4,3 +4,6 @@
 APPS_SCRIPT_SECRET=
 MCP_AUTH_TOKEN=
 OAUTH_APPROVAL_SECRET=
+
+# Optional: used by scripts/verify-prod-mcp.mjs
+# MCP_RESOURCE_URL=https://YOUR_WORKER.YOUR_SUBDOMAIN.workers.dev/mcp
