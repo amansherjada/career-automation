@@ -6,8 +6,9 @@
     "deploy": "wrangler deploy",
     "dev": "wrangler dev",
     "start": "wrangler dev",
-    "test": "vitest",
-    "cf-typegen": "wrangler types"
+    "test": "vitest run",
+    "cf-typegen": "wrangler types",
+    "verify:mcp": "node scripts/verify-prod-mcp.mjs"
   },
   "devDependencies": {
     "@cloudflare/vitest-plugin": "^1.0.0",
@@ -15,5 +16,15 @@
     "typescript": "^5.5.2",
     "vitest": "~4.1.0",
     "wrangler": "^4.127.0"
+  },
+  "dependencies": {
+    "@cloudflare/workers-oauth-provider": "^0.10.3",
+    "@modelcontextprotocol/sdk": "^1.30.0",
+    "@modelcontextprotocol/server": "^2.0.0",
+    "agents": "^0.22.0",
+    "zod": "^4.4.3"
+  },
+  "engines": {
+    "node": ">=22.12.0"
   }
 }

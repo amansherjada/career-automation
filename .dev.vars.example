@@ -1,0 +1,6 @@
+# Local-only secrets. Copy to .dev.vars and fill values.
+# Never commit .dev.vars.
+
+APPS_SCRIPT_SECRET=
+MCP_AUTH_TOKEN=
+OAUTH_APPROVAL_SECRET=
