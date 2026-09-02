@@ -3,8 +3,8 @@
 // Runtime types generated with workerd@1.20260826.1 2026-08-25 nodejs_compat
 interface __BaseEnv_Env {
 	OAUTH_KV: KVNamespace;
-	APPS_SCRIPT_URL: "https://script.google.com/macros/s/AKfycbxgzxDYw95tAWc_BwkMzemeXIzcqUihlGuGMx9FlTqZR0466Or4Jj3dRFvzuD7EQB-quQ/exec";
-	MCP_RESOURCE_URL: "https://aman-career-mcp.aman-career-mcp.workers.dev/mcp";
+	APPS_SCRIPT_URL: "YOUR_URL";
+	MCP_RESOURCE_URL: "YOUR_URL";
 	OAUTH_CLIENT_ID: "grok-aman-career-mcp";
 	MCP_AUTH_TOKEN: string;
 }
